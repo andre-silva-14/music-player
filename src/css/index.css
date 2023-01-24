@@ -215,7 +215,7 @@ button {
 
 .init-title {
   margin-bottom: 2rem;
-  color: #fff;
+  color: var(--gray_200);
 }
 
 .hidden-elem {
