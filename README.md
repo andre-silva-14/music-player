@@ -1,6 +1,6 @@
 # Music Player
 
-![Music Player Preview](https://github.com/andre-silva-14/music-player/blob/master/.github/preview.png?raw=true)
+![Music Player Preview](https://raw.githubusercontent.com/andre-silva-14/music-player/main/.github/preview.png)
 
 ## Technologies
 
