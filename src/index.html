@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/556d41370f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/png" href="./assets/default-thumbnail.png" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <title>Music Player</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <main class="container">
+        <h1 class="init-title">Open your playlist to start...</h1>
+        <input
+          class="choose-music-input"
+          type="file"
+          accept="audio/*"
+          multiple
+        />
+        <button class="choose-music-button">Open Files...</button>
+
+        <img
+          class="thumbnail hidden-elem"
+          src="assets/default-thumbnail.png"
+          alt=""
+        />
+
+        <h1 class="header hidden-elem">Title</h1>
+        <h2 class="subheader hidden-elem">Artist</h2>
+
+        <div class="actions hidden-elem">
+          <button class="action-button previous-button" title="Previous">
+            <i class="fa-solid fa-backward fa-xl"></i>
+          </button>
+
+          <button class="action-button play-pause-button" title="Play/Pause">
+            <i id="play-pause-icon" class="fa-solid fa-play fa-2xl"></i>
+          </button>
+
+          <button class="action-button next-button" title="Next">
+            <i class="fa-solid fa-forward fa-xl"></i>
+          </button>
+        </div>
+
+        <input
+          class="progress-bar hidden-elem"
+          type="range"
+          min="0"
+          max="0"
+          step="5"
+        />
+
+        <div class="duration hidden-elem">
+          <p class="elapsed" title="Elapsed time">00:00</p>
+          <p class="remaining" title="Remaining time">00:00</p>
+        </div>
+      </main>
+    </div>
+
+    <div class="theme-switch-wrapper">
+      <label class="switch">
+        <input id="theme-switch" type="checkbox" />
+        <span class="slider"></span>
+        <i class="fa-solid fa-sun"></i>
+        <i class="fa-solid fa-moon"></i>
+      </label>
+    </div>
+
+    <script
+      src="https://unpkg.com/jsmediatags@3.9.7/dist/jsmediatags.min.js"
+      integrity="sha512-XeWPT9qOsmnrwKzeMKlEXeJS1zyFA3uerQ7Rkeq9jWbdC133AXs70aen1LIXTDKAf5q2OrIpBJMHxMFkd/M1SA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/index.js" type="module"></script>
+  </body>
+</html>
