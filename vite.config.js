@@ -3,6 +3,7 @@ import mkcert from "vite-plugin-mkcert";
 
 export default defineConfig({
   root: "./src",
+  base: "/music-player/",
   plugins: [mkcert()],
   server: {
     https: true,
@@ -13,6 +14,6 @@ export default defineConfig({
     hookTimeout: 60_000,
   },
   build: {
-    outDir: "../dist",
+    outDir: "../docs",
   },
 });
