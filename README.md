@@ -9,3 +9,8 @@
 - [Playwright](https://playwright.dev/) - Reliable end-to-end testing for modern web apps
 - [Vite](https://vitejs.dev/) - Next Generation Frontend Tooling
 - [Vitest](https://vitest.dev/) - Blazing Fast Unit Test Framework
+
+## Development Setup
+
+    $ npm install
+    $ npm run dev
